@@ -1,0 +1,9 @@
+<h3>Agregar </h3>
+<hr>
+<form (ngSubmit)="agregar()">
+    <!-- los () son para emitir o escuchar eventos -->
+    <!-- los [] son para asignar una propiedad definida en el ts -->
+    <input type="text" [(ngModel)]="nuevoPersonaje.nombre" name="nombre" placeholder="Nombre">
+    <input type="number" [(ngModel)]="nuevoPersonaje.poder" name="poder" placeholder="Poder">
+    <button type="submit">Agregar</button>
+</form>
